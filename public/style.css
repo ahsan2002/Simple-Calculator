@@ -1,0 +1,103 @@
+* , html, body, p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 7%;
+    user-select: none;
+}
+ 
+
+/* Grid */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ 
+
+.calc-container {
+    display: grid;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    font-family: 'Prompt', sans-serif;
+}
+
+.dot {
+    grid-column: span 2;
+}
+
+.equal {
+    grid-row: span 2;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+}
+
+/* Input */
+#input {
+    width: 100%;
+    padding-right: 10px;
+    font-size: 3em;
+    text-align: right;
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FDFEFE;
+    background-color: black;
+    transition: all 0.3s ease-in
+}
+
+/* Btn's */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border: 0.3px solid rgba(251, 253, 255, 0.171);
+    
+}
+
+.btn-num {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-num:hover {
+    background-color: rgb(69, 69, 69);
+}
+
+.btn-operator {
+ 
+    background-color: rgb(240, 47, 47);
+    color: black;
+    font-weight: bold;
+
+}
+
+.btn-operator:hover {
+    background-color: rgb(196, 52, 52) !important
+}
+ 
+.equal{
+    background-color: rgb(240, 47, 47);
+}
+
+.heading{
+    text-align: center;
+    background-color: rgb(229, 73, 73);
+}
+.footer{
+    text-align: center;
+}
